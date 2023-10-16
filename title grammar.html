@@ -13,7 +13,7 @@
 <h2 align="right">title 2</h2>
 <h3 align="center">tilte 3</h3>
 <!--如何做一个超连接-->
-<a href="http://www.baidu.com" >baidu</a>
+<a href="http://www.baidu.com">baidu</a>
 <a href="http://www.baidu.com" target="_self">baidu</a>
 <a href="http://www.baidu.com" target="_blank">baidu_blank</a>
 <!--如何做一个标签列表-->
@@ -44,19 +44,19 @@
 <!--如何做一个表格便签-->
 <table align="center" border="1" height="100" width="200" cellspacing="0">
   <tr>
-<!--   如何加粗并且居中-->
-    <td align = "center"><b>1.1</b></td>
+    <!--   如何加粗并且居中-->
+    <td align="center"><b>1.1</b></td>
     <!--   如何加粗并且居中-->
     <th>1.2</th>
     <td>1.3</td>
   </tr>
   <tr>
-    <td  colspan="2">2.1</td>
+    <td colspan="2">2.1</td>
     <td rowspan="2">2.2</td>
     <td>2.3</td>
   </tr>
   <tr>
-    <td >3.1</td>
+    <td>3.1</td>
     <td>3.2</td>
     <td>3.3</td>
   </tr>
@@ -65,11 +65,11 @@
 <!--iframe 使用独立窗口，以及用列表打开窗口在独立中-->
 I am indepandent html <br><br><br>
 <iframe name="hello" src="hello.html" height="500" width="400"></iframe>
-  <ul>
-    <li><a href="hello.html" target="hello">hello</a></li>
-  </ul>
-<!--如何使用表单收集用户信息-->
-<form action = "http://www.baidu.com" method="get">
+<ul>
+  <li><a href="hello.html" target="hello">hello</a></li>
+</ul>
+<!--如何使用表单收集用户信息如果长度过大，method=“post”。-->
+<form action="http://www.baidu.com" method="get">
   <input type="hidden" name="action" value="login"></input>
   <table align="center">
     <tr>
@@ -80,23 +80,26 @@ I am indepandent html <br><br><br>
       <td>user pass word</td>
       <td><input type="password"/></td>
     </tr>
-      <td>sex:<input type="radio" name="sex" checked="checked">male
-        <input type="radio" name="sex">female</td>
+    <td>sex:<input type="radio" name="sex" checked="checked" value="male">male
+      <input type="radio" name="sex" value="female">female
+    </td>
     <tr>
       <td>hobbit:<input type="checkbox" checked="checked">c
-        <input type="checkbox">java</td>
-  </tr>
+        <input type="checkbox">java
+      </td>
+    </tr>
     <tr>
       <td>country:<select>
         <option selected="selected">China</option>
         <option>USA</option>
-        <option>JAP</option> </select></td>
-  </tr>
+        <option>JAP</option>
+      </select></td>
+    </tr>
     <tr>
-    <td>
-      comment:<textarea rows="1" cols="20">null</textarea>
-    </td>
-  </tr>
+      <td>
+        comment:<textarea rows="1" cols="20">null</textarea>
+      </td>
+    </tr>
   </table>
   <input type="reset">
   <input type="submit">
